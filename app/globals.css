@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-bakery-dark: #222831;
+  --color-bakery-gray: #393e46;
+  --color-bakery-light: #eeeeee;
+
+  --color-bakery-accent: #d65a31;
+}
+
+html,
+body {
+  background-color: var(--color-bakery-dark);
+  color: var(--color-bakery-light);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  overflow-x: hidden;
+  font-size: 16px;
+}
