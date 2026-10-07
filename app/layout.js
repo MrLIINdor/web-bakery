@@ -8,6 +8,7 @@ const fontSans = PT_Sans({
   weight: ['400', '700'],
   variable: '--font-sans',
 })
+
 export const metadata = {
   title: 'CraftCrust | Крафтовая пекарня',
   description: 'Ремесленный хлеб на закваске и свежая слоёная выпечка в уютной атмосфере.',
