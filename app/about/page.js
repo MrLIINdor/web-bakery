@@ -12,7 +12,7 @@ export default function PageAbout() {
   ]
 
   return (
-    <div className="bg-bakery-dark text-bakery-light relative min-h-[85vh] overflow-hidden px-6 py-10">
+    <div className="bg-bakery-dark text-bakery-light relative min-h-[85vh] overflow-hidden px-6 py-20">
       <div className="relative z-10 mx-auto max-w-6xl">
         <div className="mb-16 max-w-2xl text-left">
           <span className="text-bakery-accent font-mono font-sans text-xs tracking-widest uppercase">Философия CraftCrust</span>
