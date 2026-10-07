@@ -7,7 +7,6 @@ import { Croissant, MapPin, Phone, Clock } from 'lucide-react'
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
-  // Ссылки на наши 3 главных раздела
   const links = [
     { name: 'Главная', href: '/' },
     { name: 'О нас', href: '/about' },
@@ -17,9 +16,7 @@ export default function Footer() {
   return (
     <footer className="border-bakery-light/5 bg-bakery-dark text-bakery-light mt-auto w-full border-t font-sans">
       <div className="mx-auto max-w-6xl px-6 py-12 md:py-16">
-        {/* Главная сетка футера */}
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3 lg:gap-16">
-          {/* КОЛОНКА 1: Брендинг и Манифест */}
           <div className="space-y-4">
             <Link href="/" className="group inline-flex items-center gap-2">
               <div className="border-bakery-light/5 bg-bakery-gray text-bakery-accent group-hover:border-bakery-accent/30 rounded-xl border p-2 transition-colors">
@@ -34,7 +31,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* КОЛОНКА 2: Навигация по 3 разделам */}
           <div className="space-y-4">
             <h4 className="text-bakery-light/90 font-serif text-base font-bold tracking-wide">Разделы сайта</h4>
             <nav className="flex flex-col space-y-2.5 text-sm font-medium">
@@ -46,7 +42,6 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* КОЛОНКА 3: Быстрые контакты */}
           <div className="space-y-4">
             <h4 className="text-bakery-light/90 font-serif text-base font-bold tracking-wide">Где нас найти</h4>
             <ul className="text-bakery-light/60 space-y-3 text-sm font-light">
@@ -68,9 +63,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* НИЖНЯЯ ПАНЕЛЬ: Линия и Копирайт */}
         <div className="border-bakery-light/5 text-bakery-light/30 mt-12 flex flex-col items-center justify-center gap-4 border-t pt-6 text-xs font-light sm:flex-row">
-          MrLIINdor - All Rights Reserved © 2026
+          <div> MrLIINdor - All Rights Reserved © {currentYear} </div>
         </div>
       </div>
     </footer>
